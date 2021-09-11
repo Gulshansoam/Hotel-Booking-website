@@ -1,114 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>list</title>
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
-    <link rel="stylesheet" href="styles/list.css" />
-    <link rel="stylesheet" href="styles/common.css" />
+    <title>list</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <div id="content">
-      <header>
-        <div id="headerid">
-          <a href="index.html" target="_self">
-            <img src="assests/images/logo.png" id="logo" alt="logo" />
-          </a>
-          <span><a href="login.html" target="_self">Login</a></span>
-        </div>
-      </header>
+    <header id="header">
 
-      <div>
-        <ul>
-          <p>
-            <a href="#hotel"><li>List View</li></a>
-          </p>
-          <p>
-            <a href="#map"><li>Map View</li></a>
-          </p>
+    </header>
+    <div  class="body" style="overflow: auto;display: flex;flex-direction: column;">
+      <!--Content div-->
+      <!--first section of content div-->
+      <div style="margin-top:7%;font-weight: bold;display: flex; ">
+        <div id="container">
+          <ul class="nav nav-pills" class="navbar" id="pills-tab" style="display: flex; justify-content: center; align-items: center;">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#list">List view</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#map">Map View</a>
+            </li>
         </ul>
+        <div class="tab-content content" id="pills-tabContent">
+      <!--second section of content div-->
+      <div id="list"  class="tab-pane fade show active row"  >
+        <a href="detail.html" target="_self">
+          <div id="list-view" class="hotels col-xl-5 col-lg-10 col-md-10 col-sm-10">
+           <img class="hotel-img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"> 
+           <span  style="margin-left: 5%; color: black;margin-top: 5%;"><h3>Radisson Blu Hotel</h3>
+            <p>
+             <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked">
+          </p>New Delhi </span>  
+          </div></a>
+      <div class="hotels col-xl-5 col-lg-10 col-md-10 col-sm-10">
+        <img class="hotel-img" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" />
+        <span  style="margin-left: 5%; color: black;margin-top: 5%;"><h3>The Lalit New Delhi</h3>
+          <p>
+          <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-half-o checked"></span>
+        <span class="fa fa-star "></span></p>
+        New Delhi </span>  
+      </div>
+      <div class="hotels col-xl-5 col-lg-10 col-md-10 col-sm-10" style="margin-bottom: 10%"  >
+        <img class="hotel-img" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" />
+        <span  style="margin-left: 5%; color: black;margin-top: 5%;"><h3>Taj Palace</h3><p><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star">
+        </p>
+        New Delhi </span>  
+
+      </div>
+    </div>
+      <!--third section of content div-->
+      <div id="map" class="tab-pane fade">
+      <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"/>
+      <p>MAP VIEW</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <footer id="footer">
+
+    </footer>
+
+      <div id="loginAndContact">
+
       </div>
 
-        <div id="hotel">
-          <div class="hotelimg">
-          <a href="detail.html" target="_self">
-            <img
-              src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-              alt="Radisson Blu Hotel"
-              class="stay"
-            />
-          
-            <h3>Radission Blu Hotel</h3>
-            <p>5 Star</p>
-            <p>New Delhi</p>
-          </a>
-          </div>
 
-          <div class="hotelimg">
-          <img
-            src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
-            alt="The Lalit New Delhi"
-            class="stay"
-          />
-          <p>The Lalit New Delhi</p>
-          <p>4.5 Star</p>
-          <p>New Delhi</p>
-          </div>
-
-          <div class="hotelimg">
-          <img
-            src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
-            alt="Taj Palace"
-            class="stay"
-          />
-          
-          <p>Taj Palace</p>
-          <p>4.0 Star</p>
-          <p>New Delhi</p>
-        </div>
-         
-          <img
-            src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
-            alt="Map"
-          />
-          <div id="map">
-          <p>Map View</p>
-          </div>
-      
-
-      <footer>
-      <div id="footerid">
-     
-          <p><a href="contact.html" target="_self">Contact Us</a></p>
-          <a href="https://www.facebook.com" target="_blank">
-            <img
-              src="assests/images/facebook.png"
-              class="social"
-              alt="facebook"
-            />
-          </a>
-          <a href="https://www.instagram.com" target="_blank">
-            <img
-              src="assests/images/instagram.png"
-              class="social"
-              alt="instagram"
-            />
-          </a>
-          <a href="https://www.twitter.com" target="_blank">
-            <img
-              src="assests/images/twitter.png"
-              class="social"
-              alt="twitter"
-            />
-          </a>
-          <p>&copy; 2020 ROOM SEARCH PRIVATE PVT.LTD</p>
-       
-       </div>
-      </footer>
-    </div>
+  <script src="scripts/common.js"></script>
   </body>
-</html>
+</html> 

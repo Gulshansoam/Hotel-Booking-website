@@ -1,33 +1,36 @@
-#radisson {
-  height: 500px;
-  width: 500px;
+#marginDesc{
+  margin: 2%;
+
 }
-#hoteldis{
-  background-color: rgb(132,136,139);
-  width: 50%;
-  height: 20%;
-  
-  margin-top: 2%;
+.imgDiv{
+  background-color: rgb(132,136,139); 
+  margin: 7% auto; 
   margin-bottom: 2%;
- 
-  
-  
-}
-#hotel3{
+  flex-direction: row;
   display: flex;
+  width: 60%;
+  font-family: 'Ubuntu',sans-serif;
+  height: 270px;
+}
+
+.mainDiv{
+  margin-bottom: 60px; 
   flex-direction: column;
-  align-items: center;
+  display: flex;
+  background-color: #e0e0e0; 
 
 }
-#tariff{
-  margin: 2%;
-  padding: 1% 0 0 2%;
-  border: 1px solid black;
-  border-radius: 5px;
-}
+.descSty{
+  display: flex; 
+  font-family: cursive; 
+  background-color:rosybrown; 
 
+  border:1px solid black; 
+  border-radius: 5px; 
+  margin-right: 2%; 
+  margin-left: 2%;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-content: center;
 
-
-#cust{
-  margin: 2%;
-}
+} 
