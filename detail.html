@@ -11,14 +11,43 @@
         <header>
 
             <div>
-                <img src="./assests/images/logo.png" width="150px" height="200px" alt="logo">
-                Header div
+                
+                <a href="index.html"><img src="./assests/images/logo.png" width="150px" height="200px" alt="logo">Login</a>
 
             </div>
         </header>
         <div>
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson new delhi image"><br>
-             <a href="payment.html">Book Now</a>
+            
+             <div>
+                 <form action="payment.html" method="get">
+                     <div>
+                        <label for="adults">Adults:</label>
+                        <input type="number"  id="adults" min="1">
+                     </div>
+                     <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                     </div>
+                     <div>
+                        <label for="fromdate"> From Date:</label>
+                        <input type="date"  id="fromdate" required>
+                     </div>
+                     <div>
+                        <label for="todate">To Date</label>
+                        <input type="date" id="todate" required>
+                     </div>
+                     <div>
+                        <label for="total">Total</label>
+                        <input type="text" name="" id="total" readonly>
+                     </div>
+                     
+                     <div>
+                        <input type="submit" value="Book Now">
+                     </div>
+                     
+                 </form>
+             </div>
 
              <h2>Radisson Blu Hotel</h2>
              RATINGS<br>
