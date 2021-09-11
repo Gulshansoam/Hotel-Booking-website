@@ -1,27 +1,74 @@
-#hotel-details {
-  background-color: rgb(132, 136, 139);
-  width: 50%;
-  height: 20%;
-  margin: 2% auto;
-  display: flex;
-  align-items: center;
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
 }
-#payment-container {
-  margin-top:10%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+header{
+    background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
 }
-.hotel-image {
-  max-height: 300px;
-  max-width: 270px;
+header a{
+    text-decoration: none;
+    color: black;
+    padding-right: 15px;
 }
-#customer-payment-details {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border: black 1px solid;
-  border-radius: 5px;
-  margin: 0% 2%;
-  background-color: rosybrown;
+footer{
+    background-color: rosybrown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+}
+#contact{
+    position: absolute;
+    top: 30%;
+    left: 1%;
+}
+#mid{
+    position: absolute;
+    top: 30%;
+    right: 1%;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+#copy_right{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 10px;
+}
+#content_1{
+    background-color: rgb(132,136,139);
+    margin: auto;
+    width: 50%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-content: center;
+}
+#content_2{
+    margin: 2%;
+}
+#content_3{
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+#pay{
+    margin-bottom: 6%;
+    padding: 2%;  
+}
+div a{
+    text-decoration: none;
+    color: black;
 }

@@ -5,15 +5,14 @@
     </head>
     <body>
         <div>
-            <!-- Added the Login form -->
-            <form action="index.html" autocomplete="off" method="get">
+            <form method="GET" action="index.html">
                 <label for="username">Username:</label>
-                <input type="text" name="username" id="username" placeholder="Enter Username" required/>
+                <input type="text" required placeholder="Enter Username" name="username" id="username" autocomplete="off">
                 <br>
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" placeholder="Enter Password" required/>
+                <label for="user_password">Password:</label>
+                <input type="password" required placeholder="Enter Password" name="user_password" id="user_password" autocomplete="off">
                 <br>
-                <input type="submit" value="Login">
+                <button type="submit">Login</button>
             </form>
         </div>
     </body>
